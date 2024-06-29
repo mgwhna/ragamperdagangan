@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ragam Perdagangan</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="./Logo.png" alt="Ragam" />
+        Ragam<span>Perdagangan</span>
+      </a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Ragam</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section start -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Silahkan Berbelanja <span>Beragam Produk</span></h1>
+        <p>Beragam produk cairan pembersih, beragam produk pakaian, dan beragam keperluan lainnya.</p>
+        <a href="#" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- About Section start -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Ragam</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang_ragam.png" alt="Tentang Ragam" />
+        </div>
+        <div class="content">
+          <h3>Kenapa Memilih Produk Kami?</h3>
+          <p>Kami selalu berusaha memberikan yang terbaik kepada konsumen, karena bagi kami berjualan bukan hanya untuk mendapatkan keuntungan pribadi, tetapi mampu saling memberikan keuntungan bersama.</p>
+          <p>Berawal dari berjualan secara offline pada tahun 1995 hingga kini kami berusaha mengikuti perkembangan yang ada.</p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end -->
+
+    <!-- Menu Section start -->
+    <section id="menu" class="menu">
+      <h2><span>Menu</span> Ragam</h2>
+      <p>Beragam Produk yang mungkin sesuai dengan kebutuhan ataupun keinginan anda.</p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/menu/1.jpg" alt="SamperClean" class="menu-card-img" />
+          <h3 class="menu-card-title">- SamperClean -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/2.jpg" alt="SamperLight" class="menu-card-img" />
+          <h3 class="menu-card-title">- SamperLight -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/3.jpg" alt="SamperCare" class="menu-card-img" />
+          <h3 class="menu-card-title">- SamperCare -</h3>
+          <p class="menu-card-price">IDR 12K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/4.jpg" alt="SamperBoost" class="menu-card-img" />
+          <h3 class="menu-card-title">- SamperBoost -</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/menu/5.jpg" alt="SamperBigLight" class="menu-card-img" />
+          <h3 class="menu-card-title">- SamperBigLight -</h3>
+          <p class="menu-card-price">IDR 60K</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section end -->
+
+    <!-- Contact Section start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Ragam</h2>
+      <p>Beragam Produk yang mungkin ingin di pesan sesuai kebutuhan anda.</p>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3983.729602436274!2d99.30985543319285!3d3.1657691485133994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sjl.apel%20perumnas%20manahul%20perdagangan!5e0!3m2!1sid!2sid!4v1719153522123!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form name="contact-form">
+          <div class="input-group">
+            <label for="name" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+          </div>
+          <div class="input-group">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+          </div>
+          <div class="input-group">
+            <label for="pesan" class="form-label">Pesan</label>
+            <input type="text" class="form-control" id="pesan" aria-describedby="pesan" name="pesan" />
+          </div>
+          <button type="submit" class="btn">Kirim</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section end -->
+
+    <!-- Footer start -->
+    <footer>
+      <div>
+        <div class="socials">
+          <a href="#icons8" class="icons8-tokopedia"></a>
+          <a href="#icons8" class="icons8-shopee"></a>
+          <a href="#icons8" class="icons8-instagram"></a>
+          <a href="#icons8" class="icons8-linkedin"></a>
+        </div>
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#about">Tentang Ragam</a>
+          <a href="#menu">Menu</a>
+          <a href="#contact">Kontak</a>
+        </div>
+        <div class="credit">
+          <p>Credit by <a href="">Mega Wahana Siboro</a> &copy; 2024</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- My JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
