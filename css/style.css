@@ -27,7 +27,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10%;
+  padding: 0.75rem 10%;
   background-color: rgb(1, 1, 1, 0.8);
   border-bottom: 1px solid var(--primary);
   position: fixed;
@@ -39,7 +39,7 @@ body {
 .navbar .navbar-logo {
   font-size: 0.75rem;
   font-weight: 400;
-  max-width: 15px;
+  max-width: 12px;
   color: #fff;
   font-style: italic;
 }
@@ -47,7 +47,7 @@ body {
 .navbar .navbar-logo img {
   width: 56px;
   height: 55px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .navbar .navbar-logo span {
@@ -56,7 +56,7 @@ body {
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0 1rem;
 }
 
@@ -90,7 +90,7 @@ body {
 }
 
 /* Navbar Search Form */
-.navbar .search-form {
+/*.navbar .search-form {
   position: absolute;
   top: 100%;
   right: 7%;
@@ -102,7 +102,7 @@ body {
   transform: scaleY(0);
   transform-origin: top;
   transition: 0.3s;
-}
+} */
 
 .navbar .search-form.active {
   transform: scaleY(1);
@@ -123,12 +123,27 @@ body {
   color: var(--bg);
 }
 /* Shopping Cart */
+#shopping-cart-button {
+  position: relative;
+}
+
+#shopping-cart-button .quantity-badge {
+  display: inline-block;
+  padding: 1px 5px;
+  background-color: red;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  right: -7px;
+}
+
 .shopping-cart {
   position: absolute;
   top: 100%;
-  right: -100%;
-  height: 100vh;
-  width: 35rem;
+  right: -200%;
+  height: 70vh;
+  width: 25rem;
   padding: 0 1.5rem;
   background-color: #fff;
   color: var(--bg);
@@ -150,17 +165,17 @@ body {
 }
 
 .shopping-cart img {
-  height: 4rem;
+  height: 3rem;
   border-radius: 10%;
 }
 
 .shopping-cart h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding-bottom: 0.6rem;
 }
 
 .shopping-cart .item-price {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .shopping-cart .remove-item {
@@ -223,8 +238,8 @@ body {
 .hero .content .cta {
   margin-top: 1rem;
   display: inline-block;
-  padding: 1rem 3rem;
-  font-size: 1.4rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
   color: #b9781c;
   background-color: var(--bg);
   border-radius: 1rem;
@@ -273,13 +288,13 @@ body {
 }
 
 .about .row .content h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 }
 
 .about .row .content p {
-  margin-bottom: 0.8rem;
-  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
   font-weight: 200;
   line-height: 1.6;
 }
@@ -302,13 +317,13 @@ body {
 .menu .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 5rem;
+  margin-top: 3rem;
   justify-content: center;
 }
 
 .menu .row .menu-card {
   text-align: center;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
 .menu .row .menu-card img {
@@ -317,7 +332,18 @@ body {
 }
 
 .menu .row .menu-card-title {
-  margin-top: 1rem auto 0.5rem;
+  margin-top: 0.5rem auto 0.5rem;
+}
+
+.menu .row .cta {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: #a8dbff;
+  background-color: var(--bg);
+  border-radius: 1rem;
+  box-shadow: 1px 1px 3px rgba(105, 105, 255, 0.5);
 }
 
 /* Products Section */
@@ -337,12 +363,12 @@ body {
 .products .product-icons {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1px;
 }
 
 .products .product-icons a {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   color: #fff;
   margin: 0.3rem;
   border: 1px solid #888;
@@ -366,18 +392,12 @@ body {
 }
 
 .products .product-content h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .products .product-price {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bold;
-}
-
-.products .product-price span {
-  text-decoration: line-through;
-  font-weight: lighter;
-  font-size: 0.8rem;
 }
 
 /* Contact Section */
@@ -516,7 +536,7 @@ footer .credit a {
   position: relative;
   background-color: #fefefe;
   color: var(--bg);
-  margin: 5% auto;
+  margin: 3% auto;
   padding: 2rem;
   border: 1px solid #666;
   width: 50%;
@@ -570,16 +590,16 @@ footer .credit a {
 /* Media Queries */
 
 /* Laptop */
-@media (max-width: 991px) {
+@media (max-width: 1366px) {
   html {
-    font-size: 90%;
+    font-size: 74%;
   }
 }
 
 /* Tablet */
-@media (max-width: 767px) {
+@media (max-width: 758px) {
   html {
-    font-size: 70%;
+    font-size: 62%;
   }
 
   #hamburger-menu {
@@ -589,7 +609,7 @@ footer .credit a {
   .navbar .navbar-nav {
     position: absolute;
     top: 100%;
-    right: -150%;
+    right: -100%;
     background-color: #b9781c;
     width: 30rem;
     height: 100vh;
@@ -626,7 +646,7 @@ footer .credit a {
   }
 
   .about .row .about-img img {
-    height: 20rem;
+    height: 12rem;
     object-fit: cover;
     object-position: center;
   }
@@ -641,7 +661,7 @@ footer .credit a {
   }
 
   .about .row .content p {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 
   .menu p {
@@ -674,7 +694,7 @@ footer .credit a {
 }
 
 /* Mobile Phone */
-@media (max-width: 320px) {
+@media (max-width: 280px) {
   html {
     font-size: 55%;
   }
