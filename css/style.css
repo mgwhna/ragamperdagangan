@@ -714,12 +714,12 @@ footer .credit a {
   }
 
   .hero {
-    min-height: 1115vh;
-    background-size: 160%;
+    min-height: 115vh;
+    background-size: 150%;
     align-items: center;
     background-image: url("../img/Landing_Section_Mobline\ Phone.png");
     background-repeat: no-repeat;
-    background-position: left 1px top 130px;
+    background-position: left 1px top 160px;
   }
 
   .hero::after {
