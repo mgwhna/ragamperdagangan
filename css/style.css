@@ -713,6 +713,16 @@ footer .credit a {
     transition: 0.3s;
   }
 
+  .hero {
+    min-height: 115vh;
+    background-size: auto;
+    align-items: center;
+    background-image: url("../img/Ragam\ Perdagangan.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+  }
+
   .modal-content {
     flex-wrap: wrap;
   }
