@@ -405,16 +405,25 @@ body {
 
 /* Contact Section */
 .contact .row {
-  display: flex;
+  display: grid;
   margin-top: 2rem;
   background-color: #b9781c;
 }
 
+.contact .row .alamat-content p {
+  margin-top: 2rem;
+  margin-left: 400px;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  align-items: center;
+}
+
 .contact .row .map {
   flex: 0.3 0.3 20rem;
-  width: 200px;
-  height: 300px;
-  padding: 4rem 2rem;
+  margin-left: 320px;
+  width: 400px;
+  height: 200px;
+  padding: 2rem 2rem;
   object-fit: cover;
   align-items: center;
   border-radius: 50% 20% / 10% 40%;
@@ -422,7 +431,8 @@ body {
 
 .contact .row form {
   flex: 0.8 0.8 20rem;
-  padding: 4rem 2rem;
+  margin-top: 0;
+  padding: 2rem;
   text-align: center;
 }
 
@@ -672,17 +682,7 @@ footer .credit a {
   }
 
   .contact .row {
-    flex-wrap: wrap;
-  }
-
-  .contact .row map {
-    height: 2.5rem;
-    padding: 2rem;
-  }
-
-  .contact .row form {
-    padding: 2rem;
-    position: center;
+    flex-wrap: grid;
   }
 
   .contact .row form .btn {
@@ -726,6 +726,28 @@ footer .credit a {
     background-repeat: no-repeat;
     background-position: left;
     position: relative;
+  }
+
+  .contact .row .alamat-content p {
+    margin-top: 2rem;
+    margin-left: 70px;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    align-items: center;
+  }
+
+  .contact .row .map {
+    width: 200px;
+    height: 120px;
+    margin-left: 60px;
+    padding: 2rem;
+    border-radius: 50% 20% / 10% 40%;
+    position: static;
+  }
+
+  .contact .row form {
+    padding: 2rem;
+    position: static;
   }
 
   .modal-content {
